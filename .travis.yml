@@ -3,8 +3,7 @@ jdk: openjdk15
 sudo: false
 env:
   global: CODECOV_TOKEN="6e836c92-d895-4054-a25d-c6c707b498bc"
-script:
-    - mvn test -B
+
 after_success: bash <(curl -s https://codecov.io/bash)
 
 notifications:
