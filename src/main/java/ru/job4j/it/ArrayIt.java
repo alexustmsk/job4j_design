@@ -15,9 +15,10 @@ public class ArrayIt implements Iterator<Integer> {
     public boolean hasNext() {
         return point < data.length;
     }
+
     @Override
     public Integer next() {
-        if (!hasNext()){
+        if (!hasNext()) {
             throw new NoSuchElementException();
         }
         return data[point++];
