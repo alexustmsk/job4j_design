@@ -9,7 +9,7 @@ public class BackwardArrayItTest {
     @Test
     public void whenMultiCallhasNextThenTrue() {
         BackwardArrayIt it = new BackwardArrayIt(
-                new int[] {3, 2, 1}
+                new int[] {1, 2, 3}
         );
         assertThat(it.hasNext(), is(true));
         assertThat(it.hasNext(), is(true));
@@ -18,7 +18,7 @@ public class BackwardArrayItTest {
     @Test
     public void whenReadSequence() {
         BackwardArrayIt it = new BackwardArrayIt(
-                new int[] {3, 2, 1}
+                new int[] {1, 2, 3}
         );
         assertThat(it.next(), is(3));
         assertThat(it.next(), is(2));
